@@ -1,7 +1,6 @@
 Important points in order to use JWT in .NET 6 Web API
 
 => Install package : Microsoft.AspNetCore.Authentication.JwtBearer
-=> Create Model Folder where there is Two classes : User and LoginModel
 
 => Add the following in the Program.cs : 
     // Begin JWT Section
