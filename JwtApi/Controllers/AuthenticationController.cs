@@ -29,7 +29,7 @@ namespace JwtApi.Controllers
                     new Claim(ClaimTypes.Email, user.Email),
                     new Claim(ClaimTypes.Name, user.Username)
                 };
-                var token = _jwtAuthenticationService.GenereToken(_configuration["Jwt:key"], claims);
+                var token = _jwtAuthenticationService.GenerateToken(_configuration["Jwt:key"], claims);
                 return Ok(token);
             }
 

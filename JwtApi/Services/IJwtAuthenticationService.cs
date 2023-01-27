@@ -6,6 +6,6 @@ namespace JwtApi.Services
     public interface IJwtAuthenticationService
     {
         User Authenticate(string email, string password);
-        string GenereToken(string secret, List<Claim> claims);
+        string GenerateToken(string secret, List<Claim> claims);
     }
 }

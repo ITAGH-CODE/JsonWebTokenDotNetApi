@@ -31,7 +31,7 @@ namespace JwtApi.Services
             return users.FirstOrDefault(u => u.Email.ToUpper().Equals(email.ToUpper()) && u.Password == password);
         }
 
-        public string GenereToken(string secret, List<Claim> claims)
+        public string GenerateToken(string secret, List<Claim> claims)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
             var tokenDescriptor = new SecurityTokenDescriptor
